@@ -112,7 +112,7 @@ app.post("/articles/:id", function(req, res){
                 {new: true};
         })
         .then(function(dbArticle){
-            res.join(dbArticle)''
+            res.join(dbArticle);
         })
         .catch(function(err){
             res.json(err);
