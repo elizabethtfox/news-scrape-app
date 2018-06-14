@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 const path = require("path");
 const hbars = require("express-handlebars");
 const request = require("request");
-//var axios = require("axios");
+const axios = require("axios");
 const cheerio = require("cheerio");
 
 //Require all models
@@ -29,6 +29,7 @@ app.use(express.static("public"));
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/reddit";
+//mongodb://<dbuser>:<dbpassword>@ds259820.mlab.com:59820/heroku_9q7mcxmm
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
