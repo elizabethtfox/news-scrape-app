@@ -10,8 +10,8 @@ var request = require("request");
 var cheerio = require("cheerio");
 
 // Requiring Note and Article models
-var Note = require("./models/Note.js");
-var Article = require("./models/Article.js");
+var Note = require("./models/note.js");
+var Article = require("./models/article.js");
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/nytimes";

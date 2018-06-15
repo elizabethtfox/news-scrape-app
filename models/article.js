@@ -1,6 +1,6 @@
 // Require mongoose
 var mongoose = require("mongoose");
-var Note = require("./Note");
+var Note = require("./note");
 // Create Schema class
 var Schema = mongoose.Schema;
 
@@ -29,7 +29,7 @@ var ArticleSchema = new Schema({
 });
 
 // Create the Article model with the ArticleSchema
-var Article = mongoose.model("Article", ArticleSchema);
+var article = mongoose.model("Article", ArticleSchema);
 
 // Export the model
-module.exports = Article;
+module.exports = article;
