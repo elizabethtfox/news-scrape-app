@@ -1,0 +1,32 @@
+body {
+    background-image: url("/assets/images/background.jpeg");
+    padding-top: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.jumbotron {
+    position: relative;
+    background: rgb(227, 225, 233);
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: auto;
+}
+
+.panel {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(201, 203, 238);
+}
+
+.deleteNote {
+    display: inline-block;
+}
+
+.previousNotes {
+    display: inline-block;
+    width: 90%
+}
+
+#scrape {
+    margin: 8px 0px;
+}
